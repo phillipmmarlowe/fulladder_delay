@@ -35,6 +35,8 @@ module tt_um_example (
 	.cout(uo_out[1])
   );
   
+  assign uo_out[7:2] = 6'b0;
+  
 endmodule
 
 // Full adder def
