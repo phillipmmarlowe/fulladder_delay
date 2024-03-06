@@ -22,8 +22,8 @@ module tt_um_example (
   assign uio_oe  = 0;
   
   // ui_in[0]  used for Carry in signal
-  // ui_out[0] used for output sum signal
-  // ui_out[1] used for Carry out signal
+  // uo_out[0] used for output sum signal
+  // uo_out[1] used for Carry out signal
   
   full_adder
   #()
@@ -31,8 +31,8 @@ module tt_um_example (
 	.a(1'b1),
 	.b(1'b1),
 	.cin(ui_in[0]),
-	.sum(ui_out[0]),
-	.cout(ui_out[1])
+	.sum(uo_out[0]),
+	.cout(uo_out[1])
   );
   
 endmodule
