@@ -20,65 +20,11 @@ module tt_um_example (
   //assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
   assign uio_out = 0;
   assign uio_oe  = 0;
+    
   
-  // ui_in[0]  used for Carry in signal
-  // uo_out[0] used for output sum signal
-  // uo_out[1] used for Carry out signal
+  assign uo_out[0] = ui_in[0] & ui_in[1];
   
-  full_adder
-  #()
-  fa_i(
-	.a(1'b1),
-	.b(1'b1),
-	.cin(ui_in[0]),
-	.sum(uo_out[0]),
-	.cout(uo_out[1])
-  );
-  
-  assign uo_out[7:2] = 6'b0;
+  assign uo_out[7:1] = 7'b0;
   
 endmodule
 
-// Full adder def
-module full_adder(
-    input a, 
-    input b, 
-    input cin, 
-    output sum, 
-    output cout
-);
-    wire sum_half, carry_half1, carry_half2;
-    
-    // First half adder for inputs a and b
-    half_adder ha_i1(
-        .a(a), 
-        .b(b), 
-        .sum(sum_half), 
-        .carry(carry_half1)
-    );
-    
-    // Second half adder for sum of first half adder and cin
-    half_adder ha_i2(
-        .a(sum_half), 
-        .b(cin), 
-        .sum(sum), 
-        .carry(carry_half2)
-    );
-    
-    // OR gate to determine final carry out
-    assign cout = carry_half1 | carry_half2;
-endmodule
-
-
-// Half adder def
-module half_adder(
-    input a, 
-    input b, 
-    output sum, 
-    output carry
-);
-    // Sum is XOR of the two inputs
-    assign sum = a ^ b;
-    // Carry is AND of the two inputs
-    assign carry = a & b;
-endmodule
