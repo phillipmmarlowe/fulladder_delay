@@ -1,0 +1,171 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: ui_in[0] (input port clocked by clk)
+Endpoint: uo_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          4.00    4.00 v input external delay
+     1    0.00    0.01    0.00    4.00 v ui_in[0] (in)
+                                         ui_in[0] (net)
+                  0.01    0.00    4.00 v input1/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00    0.02    0.07    4.08 v input1/X (sky130_fd_sc_hd__clkbuf_1)
+                                         net1 (net)
+                  0.02    0.00    4.08 v _01_/B (sky130_fd_sc_hd__and2_1)
+     1    0.00    0.03    0.15    4.22 v _01_/X (sky130_fd_sc_hd__and2_1)
+                                         _00_ (net)
+                  0.03    0.00    4.22 v _02_/A (sky130_fd_sc_hd__clkbuf_4)
+     1    0.04    0.08    0.19    4.41 v _02_/X (sky130_fd_sc_hd__clkbuf_4)
+                                         uo_out[0] (net)
+                  0.08    0.00    4.41 v uo_out[0] (out)
+                                  4.41   data arrival time
+
+                  0.15   20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (ideal)
+                         -0.25   19.75   clock uncertainty
+                          0.00   19.75   clock reconvergence pessimism
+                         -4.00   15.75   output external delay
+                                 15.75   data required time
+-----------------------------------------------------------------------------
+                                 15.75   data required time
+                                 -4.41   data arrival time
+-----------------------------------------------------------------------------
+                                 11.34   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 69 unannotated drivers.
+ clk
+ ena
+ rst_n
+ ui_in[0]
+ ui_in[1]
+ ui_in[2]
+ ui_in[3]
+ ui_in[4]
+ ui_in[5]
+ ui_in[6]
+ ui_in[7]
+ uio_in[0]
+ uio_in[1]
+ uio_in[2]
+ uio_in[3]
+ uio_in[4]
+ uio_in[5]
+ uio_in[6]
+ uio_in[7]
+ _01_/X
+ _02_/X
+ input1/X
+ input2/X
+ tt_um_example_10/HI
+ tt_um_example_10/LO
+ tt_um_example_11/HI
+ tt_um_example_11/LO
+ tt_um_example_12/HI
+ tt_um_example_12/LO
+ tt_um_example_13/HI
+ tt_um_example_13/LO
+ tt_um_example_14/HI
+ tt_um_example_14/LO
+ tt_um_example_15/HI
+ tt_um_example_15/LO
+ tt_um_example_16/HI
+ tt_um_example_16/LO
+ tt_um_example_17/HI
+ tt_um_example_17/LO
+ tt_um_example_18/HI
+ tt_um_example_18/LO
+ tt_um_example_19/HI
+ tt_um_example_19/LO
+ tt_um_example_20/HI
+ tt_um_example_20/LO
+ tt_um_example_21/HI
+ tt_um_example_21/LO
+ tt_um_example_22/HI
+ tt_um_example_22/LO
+ tt_um_example_23/HI
+ tt_um_example_23/LO
+ tt_um_example_24/HI
+ tt_um_example_24/LO
+ tt_um_example_25/HI
+ tt_um_example_25/LO
+ tt_um_example_3/HI
+ tt_um_example_3/LO
+ tt_um_example_4/HI
+ tt_um_example_4/LO
+ tt_um_example_5/HI
+ tt_um_example_5/LO
+ tt_um_example_6/HI
+ tt_um_example_6/LO
+ tt_um_example_7/HI
+ tt_um_example_7/LO
+ tt_um_example_8/HI
+ tt_um_example_8/LO
+ tt_um_example_9/HI
+ tt_um_example_9/LO
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 23 unconstrained endpoints.
+  uio_oe[0]
+  uio_oe[1]
+  uio_oe[2]
+  uio_oe[3]
+  uio_oe[4]
+  uio_oe[5]
+  uio_oe[6]
+  uio_oe[7]
+  uio_out[0]
+  uio_out[1]
+  uio_out[2]
+  uio_out[3]
+  uio_out[4]
+  uio_out[5]
+  uio_out[6]
+  uio_out[7]
+  uo_out[1]
+  uo_out[2]
+  uo_out[3]
+  uo_out[4]
+  uo_out[5]
+  uo_out[6]
+  uo_out[7]

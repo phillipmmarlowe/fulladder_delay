@@ -1,0 +1,87 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "tt_um_example")
+ (DATE "Fri Mar  8 06:32:59 2024")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.4.0")
+ (DIVIDER .)
+ (VOLTAGE 1.800::1.800)
+ (PROCESS "1.000::1.000")
+ (TEMPERATURE 25.000::25.000)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "tt_um_example")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ui_in[1] input2.A (0.011:0.011:0.011) (0.004:0.004:0.004))
+    (INTERCONNECT ui_in[0] input1.A (0.010:0.010:0.010) (0.004:0.004:0.004))
+    (INTERCONNECT _01_.X _02_.A (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _02_.X uo_out[0] (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input1.X _01_.B (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT input2.X _01_.A (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_10.LO uio_out[6] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_11.LO uio_out[7] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_12.LO uo_out[1] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_13.LO uo_out[2] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_14.LO uo_out[3] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_15.LO uo_out[4] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_16.LO uo_out[5] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_17.LO uo_out[6] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_18.LO uo_out[7] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_19.LO uio_oe[0] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_20.LO uio_oe[1] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_21.LO uio_oe[2] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_22.LO uio_oe[3] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_23.LO uio_oe[4] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_24.LO uio_oe[5] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_25.LO uio_oe[6] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_3.LO uio_oe[7] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_4.LO uio_out[0] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_5.LO uio_out[1] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_6.LO uio_out[2] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_7.LO uio_out[3] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_8.LO uio_out[4] (0.000:0.000:0.000))
+    (INTERCONNECT tt_um_example_9.LO uio_out[5] (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__and2_1")
+  (INSTANCE _01_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.110:0.110:0.110) (0.123:0.123:0.123))
+    (IOPATH B X (0.118:0.118:0.118) (0.143:0.143:0.143))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__clkbuf_4")
+  (INSTANCE _02_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.196:0.196:0.196) (0.185:0.185:0.186))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__clkbuf_1")
+  (INSTANCE input1)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.083:0.083:0.083) (0.078:0.078:0.078))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__clkbuf_1")
+  (INSTANCE input2)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.075:0.075:0.075) (0.074:0.074:0.074))
+   )
+  )
+ )
+)

@@ -1,0 +1,3 @@
+ABC: Warning: Cannot open file "abc.history" for writing.
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: Warning: Cannot open file "abc.history" for writing.

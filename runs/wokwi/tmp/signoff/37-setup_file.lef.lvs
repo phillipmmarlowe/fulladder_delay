@@ -1,0 +1,1 @@
+lvs {/work/runs/wokwi/results/signoff/tt_um_example.spice tt_um_example} {/work/runs/wokwi/tmp/signoff/34-tt_um_example.pnl.v tt_um_example} /opt/tt/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl /work/runs/wokwi/logs/signoff/37-tt_um_example.lef.lvs.log -json

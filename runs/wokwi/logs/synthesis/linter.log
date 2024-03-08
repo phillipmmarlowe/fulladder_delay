@@ -1,0 +1,22 @@
+%Warning-UNUSEDSIGNAL: /work/src/project.v:9:23: Bits of signal are not used: 'ui_in'[7:2]
+                                               : ... note: In instance 'tt_um_example'
+    9 |     input  wire [7:0] ui_in,     
+      |                       ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.018
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /work/src/project.v:11:23: Signal is not used: 'uio_in'
+                                                : ... note: In instance 'tt_um_example'
+   11 |     input  wire [7:0] uio_in,    
+      |                       ^~~~~~
+%Warning-UNUSEDSIGNAL: /work/src/project.v:14:23: Signal is not used: 'ena'
+                                                : ... note: In instance 'tt_um_example'
+   14 |     input  wire       ena,       
+      |                       ^~~
+%Warning-UNUSEDSIGNAL: /work/src/project.v:15:23: Signal is not used: 'clk'
+                                                : ... note: In instance 'tt_um_example'
+   15 |     input  wire       clk,       
+      |                       ^~~
+%Warning-UNUSEDSIGNAL: /work/src/project.v:16:23: Signal is not used: 'rst_n'
+                                                : ... note: In instance 'tt_um_example'
+   16 |     input  wire       rst_n      
+      |                       ^~~~~

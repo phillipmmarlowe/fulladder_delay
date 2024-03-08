@@ -1,0 +1,193 @@
+Netgen 1.5.255 compiled on Wed Jul 12 10:06:14 UTC 2023
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file /work/runs/wokwi/results/signoff/tt_um_example.spice
+Reading netlist file /work/runs/wokwi/tmp/signoff/34-tt_um_example.pnl.v
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_3.
+Creating placeholder cell definition for module sky130_ef_sc_hd__decap_12.
+Creating placeholder cell definition for module sky130_fd_sc_hd__fill_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__fill_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_6.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_4.
+Creating placeholder cell definition for module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__and2_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_4.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__conb_1.
+
+Reading setup file /opt/tt/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Comparison output logged to file /work/runs/wokwi/logs/signoff/37-tt_um_example.lef.lvs.log
+Logging to file "/work/runs/wokwi/logs/signoff/37-tt_um_example.lef.lvs.log" enabled
+
+Contents of circuit 1:  Circuit: 'sky130_ef_sc_hd__decap_12'
+Circuit sky130_ef_sc_hd__decap_12 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_ef_sc_hd__decap_12'
+Circuit sky130_ef_sc_hd__decap_12 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_ef_sc_hd__decap_12 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__tapvpwrvgnd_1'
+Circuit sky130_fd_sc_hd__tapvpwrvgnd_1 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__tapvpwrvgnd_1'
+Circuit sky130_fd_sc_hd__tapvpwrvgnd_1 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__tapvpwrvgnd_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_4'
+Circuit sky130_fd_sc_hd__decap_4 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_4'
+Circuit sky130_fd_sc_hd__decap_4 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__decap_4 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_6'
+Circuit sky130_fd_sc_hd__decap_6 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_6'
+Circuit sky130_fd_sc_hd__decap_6 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__decap_6 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__fill_1'
+Circuit sky130_fd_sc_hd__fill_1 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__fill_1'
+Circuit sky130_fd_sc_hd__fill_1 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__fill_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_3'
+Circuit sky130_fd_sc_hd__decap_3 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_3'
+Circuit sky130_fd_sc_hd__decap_3 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__decap_3 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__fill_2'
+Circuit sky130_fd_sc_hd__fill_2 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__fill_2'
+Circuit sky130_fd_sc_hd__fill_2 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__fill_2 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__clkbuf_1'
+Circuit sky130_fd_sc_hd__clkbuf_1 contains 0 device instances.
+Circuit contains 0 nets, and 6 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__clkbuf_1'
+Circuit sky130_fd_sc_hd__clkbuf_1 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__clkbuf_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__clkbuf_4'
+Circuit sky130_fd_sc_hd__clkbuf_4 contains 0 device instances.
+Circuit contains 0 nets, and 6 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__clkbuf_4'
+Circuit sky130_fd_sc_hd__clkbuf_4 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__clkbuf_4 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__conb_1'
+Circuit sky130_fd_sc_hd__conb_1 contains 0 device instances.
+Circuit contains 0 nets, and 6 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__conb_1'
+Circuit sky130_fd_sc_hd__conb_1 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__conb_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__and2_1'
+Circuit sky130_fd_sc_hd__and2_1 contains 0 device instances.
+Circuit contains 0 nets, and 7 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__and2_1'
+Circuit sky130_fd_sc_hd__and2_1 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_fd_sc_hd__and2_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_example'
+Circuit tt_um_example contains 1736 device instances.
+  Class: sky130_ef_sc_hd__decap_12 instances: 920
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   2
+  Class: sky130_fd_sc_hd__clkbuf_4 instances:   1
+  Class: sky130_fd_sc_hd__conb_1 instances:  23
+  Class: sky130_fd_sc_hd__decap_3 instances:  94
+  Class: sky130_fd_sc_hd__decap_4 instances:  34
+  Class: sky130_fd_sc_hd__decap_6 instances: 190
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances: 225
+  Class: sky130_fd_sc_hd__fill_1 instances: 219
+  Class: sky130_fd_sc_hd__fill_2 instances:  27
+Circuit contains 54 nets, and 17 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_example'
+Circuit tt_um_example contains 1736 device instances.
+  Class: sky130_ef_sc_hd__decap_12 instances: 920
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   2
+  Class: sky130_fd_sc_hd__clkbuf_4 instances:   1
+  Class: sky130_fd_sc_hd__conb_1 instances:  23
+  Class: sky130_fd_sc_hd__decap_3 instances:  94
+  Class: sky130_fd_sc_hd__decap_4 instances:  34
+  Class: sky130_fd_sc_hd__decap_6 instances: 190
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances: 225
+  Class: sky130_fd_sc_hd__fill_1 instances: 219
+  Class: sky130_fd_sc_hd__fill_2 instances:  27
+Circuit contains 54 nets, and 17 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'tt_um_example'
+Circuit tt_um_example contains 34 device instances.
+  Class: sky130_ef_sc_hd__decap_12 instances:   1
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   2
+  Class: sky130_fd_sc_hd__clkbuf_4 instances:   1
+  Class: sky130_fd_sc_hd__conb_1 instances:  23
+  Class: sky130_fd_sc_hd__decap_3 instances:   1
+  Class: sky130_fd_sc_hd__decap_4 instances:   1
+  Class: sky130_fd_sc_hd__decap_6 instances:   1
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_2 instances:   1
+Circuit contains 54 nets, and 17 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_example'
+Circuit tt_um_example contains 34 device instances.
+  Class: sky130_ef_sc_hd__decap_12 instances:   1
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:   2
+  Class: sky130_fd_sc_hd__clkbuf_4 instances:   1
+  Class: sky130_fd_sc_hd__conb_1 instances:  23
+  Class: sky130_fd_sc_hd__decap_3 instances:   1
+  Class: sky130_fd_sc_hd__decap_4 instances:   1
+  Class: sky130_fd_sc_hd__decap_6 instances:   1
+  Class: sky130_fd_sc_hd__and2_1 instances:   1
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_2 instances:   1
+Circuit contains 54 nets, and 17 disconnected pins.
+
+Circuit 1 contains 34 devices, Circuit 2 contains 34 devices.
+Circuit 1 contains 54 nets,    Circuit 2 contains 54 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/work/runs/wokwi/logs/signoff/37-tt_um_example.lef.lvs.log" disabled
+LVS Done.

@@ -1,0 +1,87 @@
+OpenROAD 6f9b2bb8b808b1bb5831d4525d868212ae50517a 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/work/runs/wokwi/results/floorplan/tt_um_example.odb'…
+define_corners Typical
+read_liberty -corner Typical /opt/tt/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.0
+[INFO]: Setting input delay to: 4.0
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met4 and clock max routing layer to met4. 
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 2760 2720
+[INFO GPL-0005] CoreAreaUxUy: 158240 108800
+[INFO GPL-0006] NumInstances: 328
+[INFO GPL-0007] NumPlaceInstances: 25
+[INFO GPL-0008] NumFixedInstances: 303
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 44
+[INFO GPL-0011] NumPins: 71
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 161000 111520
+[INFO GPL-0014] CoreAreaLxLy: 2760 2720
+[INFO GPL-0015] CoreAreaUxUy: 158240 108800
+[INFO GPL-0016] CoreArea: 16493318400
+[INFO GPL-0017] NonPlaceInstsArea: 574300800
+[INFO GPL-0018] PlaceInstsArea: 97593600
+[INFO GPL-0019] Util(%): 0.61
+[INFO GPL-0020] StdInstsArea: 97593600
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000008 HPWL: 4337680
+[InitialPlace]  Iter: 2 CG residual: 0.00000005 HPWL: 235952
+[InitialPlace]  Iter: 3 CG residual: 0.00000001 HPWL: 227551
+[InitialPlace]  Iter: 4 CG residual: 0.00000002 HPWL: 217549
+[InitialPlace]  Iter: 5 CG residual: 0.00000001 HPWL: 207954
+[INFO GPL-0031] FillerInit: NumGCells: 2543
+[INFO GPL-0032] FillerInit: NumGNets: 44
+[INFO GPL-0033] FillerInit: NumGPins: 71
+[INFO GPL-0023] TargetDensity: 0.60
+[INFO GPL-0024] AveragePlaceInstArea: 3903744
+[INFO GPL-0025] IdealBinArea: 6506240
+[INFO GPL-0026] IdealBinCnt: 2535
+[INFO GPL-0027] TotalBinArea: 16493318400
+[INFO GPL-0028] BinCnt: 32 32
+[INFO GPL-0029] BinSize: 4859 3315
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter: 1 overflow: 0 HPWL: 184088
+[INFO GPL-0100] worst slack 1.14e-08
+[INFO GPL-0103] Weighted 0 nets.
+[NesterovSolve] Snapshot saved at iter = 0
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 23 16
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 368
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.7500000149011612
+[INFO GPL-0067] 1.0%RC: 0.6857143044471741
+[INFO GPL-0068] 2.0%RC: 0.6323809742927551
+[INFO GPL-0069] 5.0%RC: 0.5961390202109879
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.7178572
+[NesterovSolve] Finished with Overflow: 0.000000
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/work/runs/wokwi/tmp/placement/7-global.odb'…
+Writing netlist to '/work/runs/wokwi/tmp/placement/7-global.nl.v'…
+Writing powered netlist to '/work/runs/wokwi/tmp/placement/7-global.pnl.v'…
+Writing layout to '/work/runs/wokwi/tmp/placement/7-global.def'…
