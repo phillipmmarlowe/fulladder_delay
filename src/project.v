@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-`define default_netname none
+`define AND_CELL          sky130_fd_sc_hd__and2_1 
 
+(* techmap_celltype = "$and" *)
 module tt_um_example (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
@@ -22,9 +23,8 @@ module tt_um_example (
   assign uio_oe  = 0;
     
   
-  assign uo_out[0] = ui_in[0] & ui_in[1];
-  
-  assign uo_out[7:1] = 7'b0;
+  //assign uo_out[0] = ui_in[0] & ui_in[1];
+  //assign uo_out[7:1] = 7'b0;
   
 endmodule
 
