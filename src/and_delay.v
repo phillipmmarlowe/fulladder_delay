@@ -16,7 +16,7 @@ module dand #(parameter n=32) (
 	generate 
 		genvar i;
 		for(i=1; i<n; i=i+1) begin : dand_genblk
-			`AND_CELL DAND ( .X(tout_w[i]), .A(1'b1), .B(temp[i-1]));
+			`AND_CELL DAND ( .X(tout_w[i]), .A(1'b1), .B(tout_w[i-1]));
         end
    	endgenerate
 
