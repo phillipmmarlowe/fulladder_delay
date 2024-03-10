@@ -1,5 +1,12 @@
+/*
+ * Copyright (c) 2024 Phillip Marlowe
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+// Define cell 
 `define AND_CELL          sky130_fd_sc_hd__and2_1 
 
+// Define techmap for cell type (yosys)
 (* techmap_celltype = "$and" *)
 module dand #(parameter n=32) ( 
 	input [0:0] 	sel_i,
